@@ -74,18 +74,6 @@ If `words_bank.txt` is missing, the game falls back to an older `words.txt` file
 
 For example, if the answer is `WORLD` and you guess `HELLO`, the second L turns green and the first L stays gray. `WORLD` only has one L, and the green one has already claimed it.
 
-## Stats
-
-Stats are stored in `stats.json` next to the game:
-
-```json
-{"played": 12, "wins": 10, "streak": 4, "best": 6, "dist": [0, 1, 3, 4, 2, 0]}
-```
-
-`dist` counts how many games you won in 1, 2, 3, 4, 5 and 6 guesses.
-
-If you restart in the middle of a game after making at least one guess, that game counts as a loss and your streak resets. This stops anyone from skipping hard words to protect a streak. To reset all your stats, just delete `stats.json`.
-
 ## Customising
 
 All the main settings are constants at the top of `wordle.py`:
