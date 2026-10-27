@@ -16,7 +16,7 @@ A polished, fully playable Wordle clone built with Python and Pygame. Guess the 
 
 ## Requirements
 
-- Python 3.8 or newer
+- Python
 - Pygame
 
 ```bash
@@ -68,9 +68,9 @@ If `words_bank.txt` is missing, the game falls back to an older `words.txt` file
 
 | Colour | Meaning |
 | --- | --- |
-| 🟩 Green | Right letter in the right spot |
-| 🟨 Yellow | The letter is in the word, but in a different spot |
-| ⬛ Gray | The letter isn't in the word (or every copy of it is already accounted for) |
+| Green | Right letter in the right spot |
+| Yellow | The letter is in the word, but in a different spot |
+| Gray | The letter isn't in the word (or every copy of it is already accounted for) |
 
 For example, if the answer is `WORLD` and you guess `HELLO`, the second L turns green and the first L stays gray. `WORLD` only has one L, and the green one has already claimed it.
 
