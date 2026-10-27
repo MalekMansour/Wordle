@@ -73,22 +73,3 @@ If `words_bank.txt` is missing, the game falls back to an older `words.txt` file
 | Gray | The letter isn't in the word (or every copy of it is already accounted for) |
 
 For example, if the answer is `WORLD` and you guess `HELLO`, the second L turns green and the first L stays gray. `WORLD` only has one L, and the green one has already claimed it.
-
-## Customising
-
-All the main settings are constants at the top of `wordle.py`:
-
-- **Colours:** `GREEN`, `YELLOW`, `GRAY`, `LOSS_RED`, `BG_TOP`, `BG_BOTTOM` and the others
-- **Animation speed:** `FLIP_DUR`, `FLIP_STAGGER`, `SHAKE_DUR`, `BOUNCE_DUR` and the other timings, all in milliseconds
-- **Win messages:** `WIN_WORDS`, the message shown for winning in 1 through 6 guesses
-- **Board size:** `WORD_LEN` and `MAX_GUESSES` (if you change `WORD_LEN`, your word lists need words of that length)
-
-## Project structure
-
-```
-wordle.py          the game
-words_bank.txt     possible answers
-words_valid.txt    allowed guesses
-stats.json         your saved stats (created automatically)
-screenshots/       images for this README
-```
